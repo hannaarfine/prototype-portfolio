@@ -3,14 +3,14 @@ export const projects = [
     id: "coffee",
     images: ["coffee_table.jpg", "coffee_table3.jpg", "coffee_table2.jpg"],
     title: "Coffee & tea bench",
-    materials: "Live edge oak, steel",
+    materials: "Live edge oak, welded steel legs",
   },
   {
     id: "dining",
 
     images: ["dining4.jpg", "dining.jpg", "dining2.jpg"],
     title: "Dining table",
-    materials: "Pine, steel",
+    materials: "Pine, welded steel base",
   },
   {
     id: "coaster",
@@ -23,7 +23,7 @@ export const projects = [
     id: "planter",
 
     images: ["planter.jpg"],
-    title: "Plant stand",
+    title: "Welded Plant hanger",
     materials: "Steel, birch plywood, twine",
   },
   {
