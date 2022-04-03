@@ -29,7 +29,7 @@ export const projects = [
   {
     id: "tray",
 
-    images: ["tea_tray.jpg", "tea_tray2.jpg"],
+    images: ["tea_tray.jpg", "tea_tray2.jpg", "tea_tray3.jpg"],
     title: "Tea tray",
     materials: "Maple, walnut",
   },
