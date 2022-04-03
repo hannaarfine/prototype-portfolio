@@ -29,7 +29,7 @@ p {
   text-align: right !important;
 }
 
-.slick-dots li {
+.slick-dots li, .slick-dots li button {
   width: 30px !important;
   height: 4px !important;
   margin-left: 0 !important;

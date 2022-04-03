@@ -25,23 +25,24 @@ function App() {
     "pencil2.jpg",
     "shelf.jpg",
     "tea_tray.jpg",
-
-    "tea_tray.jpg2",
+    "tea_tray2.jpg",
   ];
   // Download all image assets in advance
-  imagesToPreload.forEach((preloadAsset) => {
-    new Image().src = preloadAsset;
-  });
+  // imagesToPreload.forEach((preloadAsset) => {
+  //   new Image().src = preloadAsset;
+  // });
 
   return (
     <Router>
       <Nav />
 
-      <Switch>
-        <Route exact path="/">
+      <Home />
+
+      {/* <Switch>
+        <Route path="/">
           <Home />
         </Route>
-      </Switch>
+      </Switch> */}
     </Router>
   );
 }
