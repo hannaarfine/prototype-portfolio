@@ -1,9 +1,10 @@
 export const projects = [
   {
     id: "coffee",
-    images: ["coffee_table.jpg", "coffee_table3.jpg", "coffee_table2.jpg"],
+    images: ["/coffee_table.jpg", "coffee_table3.jpg", "coffee_table2.jpg"],
     title: "Coffee & tea bench",
     materials: "Live edge oak, welded steel legs",
+    maker: "margot",
   },
   {
     id: "dining",
@@ -11,6 +12,7 @@ export const projects = [
     images: ["dining4.jpg", "dining.jpg", "dining2.jpg"],
     title: "Dining table",
     materials: "Pine, welded steel base",
+    maker: "margot",
   },
   {
     id: "coaster",
@@ -18,6 +20,7 @@ export const projects = [
     images: ["coasters2.jpg", "coasters.jpg"],
     title: "Jubba's coasters (shhh it's a surprise)",
     materials: "Maple, walnut",
+    maker: "both",
   },
   {
     id: "planter",
@@ -25,6 +28,7 @@ export const projects = [
     images: ["planter.jpg"],
     title: "Welded Plant hanger",
     materials: "Steel, birch plywood, twine",
+    maker: "both",
   },
   {
     id: "tray",
@@ -32,6 +36,7 @@ export const projects = [
     images: ["tea_tray.jpg", "tea_tray2.jpg", "tea_tray3.jpg"],
     title: "Tea tray",
     materials: "Maple, walnut",
+    maker: "hanna",
   },
   {
     id: "stand",
@@ -39,6 +44,7 @@ export const projects = [
     images: ["nightstand.jpg", "nightstand2.jpg"],
     title: "Night stand",
     materials: "Birch plywood",
+    maker: "hanna",
   },
   {
     id: "pencil",
@@ -46,6 +52,7 @@ export const projects = [
     images: ["pencil.jpg", "pencil2.jpg"],
     title: "Pencil holders",
     materials: "Oak, tiger wood",
+    maker: "hanna",
   },
   {
     id: "boards",
@@ -53,11 +60,13 @@ export const projects = [
     images: ["boards.jpg"],
     title: "Cutting boards galore",
     materials: "Lots of wood (mostly scavenged)",
+    maker: "both",
   },
   {
     id: "shelf",
     images: ["shelf.jpg"],
     title: "Undie storage",
     materials: "Birch plywood",
+    maker: "hanna",
   },
 ];

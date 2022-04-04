@@ -28,7 +28,8 @@ export const NavLayout = styled.div`
   // background: #f4f1eb;
   // border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 
-  a, button {
+  a,
+  button {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
@@ -40,11 +41,14 @@ export const NavLayout = styled.div`
     font-weight: 500;
     letter-spacing: 0;
     font-size: 16px;
-    opacity: 0.6;
+    // opacity: 0.6;
 
     background: none;
     border: none;
     outline: none;
+
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
 
     pointer: cursor;
   }
@@ -56,4 +60,15 @@ export const NavLayout = styled.div`
   @media screen and (max-width: 767px) {
     max-width: 100vw;
   }
+`;
+
+export const Hanna = styled.span`
+  transition: all 0.2s ease-in-out;
+
+  opacity: ${(props) => (props.$active ? 1 : 0.5)};
+`;
+export const Margot = styled.span`
+  transition: all 0.2s ease-in-out;
+
+  opacity: ${(props) => (props.$active ? 1 : 0.5)};
 `;

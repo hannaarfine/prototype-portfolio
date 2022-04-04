@@ -5,7 +5,7 @@ import { Home } from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { projects } from "./data/projects";
+import { useState } from "react";
 
 function App() {
   const imagesToPreload = [
@@ -32,11 +32,12 @@ function App() {
   //   new Image().src = preloadAsset;
   // });
 
+  const [active, setActive] = useState();
+
   return (
     <Router>
-      <Nav />
-
-      <Home />
+      <Nav active={active} />
+      <Home setActive={setActive} />
 
       {/* <Switch>
         <Route path="/">

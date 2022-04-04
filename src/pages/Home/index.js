@@ -6,9 +6,7 @@ import { projects } from "../../data/projects.js";
 import Slider from "react-slick";
 import Fade from "react-reveal/Fade";
 
-export const Home = () => {
-  const [hover, setHover] = useState(null);
-
+export const Home = ({ setActive }) => {
   return (
     <HomeLayout>
       <Container fluid>
@@ -18,24 +16,24 @@ export const Home = () => {
             <Col sm={4}>
               <Fade bottom distance="100px" cascade>
                 {projects.map((project) => {
-                  const { title, images, materials, id } = project;
+                  const { title, images, materials, maker } = project;
                   const settings = {
                     arrows: false,
                     dots: true,
                     fade: true,
                     autoplay: true,
                     speed: 1,
-                    autoplaySpeed: Math.random() * (2500 - 1200) + 1200,
+                    autoplaySpeed: Math.random() * (3500 - 2000) + 2000,
                     pauseOnHover: true,
                   };
 
                   return (
                     <ProjectImage
                       onMouseEnter={() => {
-                        setHover(id);
+                        setActive(maker);
                       }}
                       onMouseLeave={() => {
-                        setHover(null);
+                        setActive(null);
                       }}
                     >
                       <Slider {...settings}>
