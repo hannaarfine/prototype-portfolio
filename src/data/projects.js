@@ -31,13 +31,13 @@ export const projects = [
     maker: "both",
   },
   {
-    id: "tray",
-
-    images: ["tea_tray.jpg", "tea_tray2.jpg", "tea_tray3.jpg"],
-    title: "Tea tray",
-    materials: "Maple, walnut",
-    maker: "hanna",
+    id: "boards",
+    images: ["boards2.jpg", "boards.jpg"],
+    title: "Cutting boards galore",
+    materials: "Lots of wood (mostly scavenged)",
+    maker: "both",
   },
+
   {
     id: "stand",
 
@@ -55,12 +55,12 @@ export const projects = [
     maker: "hanna",
   },
   {
-    id: "boards",
+    id: "tray",
 
-    images: ["boards.jpg"],
-    title: "Cutting boards galore",
-    materials: "Lots of wood (mostly scavenged)",
-    maker: "both",
+    images: ["tea_tray.jpg", "tea_tray2.jpg", "tea_tray3.jpg"],
+    title: "Tea tray",
+    materials: "Maple, walnut",
+    maker: "hanna",
   },
   {
     id: "shelf",
