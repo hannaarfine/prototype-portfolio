@@ -8,12 +8,15 @@ export const Nav = ({ active }) => {
   };
   return (
     <NavLayout>
-      <button onClick={scrollToTop}>
-        <Hanna $active={active === "hanna" || active === "both"}>Hanna</Hanna> |{" "}
-        <Margot $active={active === "margot" || active === "both"}>
-          Margot
-        </Margot>
-      </button>
+      <Link to="/">
+        <button onClick={scrollToTop}>
+          <Hanna $active={active === "hanna" || active === "both"}>Hanna</Hanna>{" "}
+          |{" "}
+          <Margot $active={active === "margot" || active === "both"}>
+            Margot
+          </Margot>
+        </button>
+      </Link>
     </NavLayout>
   );
 };

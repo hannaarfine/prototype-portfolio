@@ -7,6 +7,8 @@ import Slider from "react-slick";
 import Fade from "react-reveal/Fade";
 
 export const Home = ({ setActive }) => {
+  const [currentId, setCurrentId] = useState();
+
   return (
     <HomeLayout>
       <Container fluid>
@@ -16,7 +18,7 @@ export const Home = ({ setActive }) => {
             <Col sm={4}>
               <Fade bottom distance="100px" cascade>
                 {projects.map((project) => {
-                  const { title, images, materials, maker } = project;
+                  const { title, images, materials, maker, id } = project;
                   const settings = {
                     arrows: false,
                     dots: true,
@@ -34,6 +36,9 @@ export const Home = ({ setActive }) => {
                       }}
                       onMouseLeave={() => {
                         setActive(null);
+                      }}
+                      onClick={() => {
+                        setCurrentId(id);
                       }}
                     >
                       <Slider {...settings}>

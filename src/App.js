@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Nav } from "./component/Nav";
 import { Home } from "./pages/Home";
+import { Project } from "./pages/Project";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,13 +38,20 @@ function App() {
   return (
     <Router>
       <Nav active={active} />
-      <Home setActive={setActive} />
+      {/* <Home setActive={setActive} /> */}
 
-      {/* <Switch>
-        <Route path="/">
+      <Switch>
+         <Route path='/' exact component={Home}/>
+         <Route path='/project' exact component={Project}/>
+
+        {/* <Route path="/">
           <Home />
-        </Route>
-      </Switch> */}
+        </Route> */}
+
+        {/* <Route path="/project">
+          <Project />
+        </Route> */}
+      </Switch>
     </Router>
   );
 }

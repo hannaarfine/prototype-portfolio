@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const HomeLayout = styled.div``;
+export const HomeLayout = styled.div`
+  position: relative;
+`;
 
 export const Feed = styled.div`
   padding: 100px 0;
@@ -22,5 +24,4 @@ export const Materials = styled.p`
   opacity: 0.6;
   text-transform: uppercase;
   margin-top: 2px;
-
 `;

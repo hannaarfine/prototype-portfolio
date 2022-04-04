@@ -46,3 +46,7 @@ p {
 .slick-dots li button:before {
   display: none;
 }
+
+.slick-list {
+  background: #000;
+}
