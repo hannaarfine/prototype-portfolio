@@ -57,7 +57,7 @@ export const projects = [
   {
     id: "boards",
 
-    images: ["boards.jpg"],
+    images: ["boards2.jpg", "boards.jpg"],
     title: "Cutting boards galore",
     materials: "Lots of wood (mostly scavenged)",
     maker: "both",
