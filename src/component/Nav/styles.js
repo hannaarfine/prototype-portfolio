@@ -72,3 +72,7 @@ export const Margot = styled.span`
 
   opacity: ${(props) => (props.$active ? 1 : 0.5)};
 `;
+
+export const Dash = styled.span`
+  opacity: 0.5 !important;
+`;

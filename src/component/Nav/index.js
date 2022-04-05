@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { NavLayout, Links, Headline, Hanna, Margot } from "./styles";
+import { NavLayout, Hanna, Margot, Dash } from "./styles";
 import { Link, useHistory } from "react-router-dom";
 
 export const Nav = ({ active }) => {
@@ -9,7 +9,8 @@ export const Nav = ({ active }) => {
   return (
     <NavLayout>
       <button onClick={scrollToTop}>
-        <Hanna $active={active === "hanna" || active === "both"}>Hanna</Hanna> |{" "}
+        <Hanna $active={active === "hanna" || active === "both"}>Hanna</Hanna>{" "}
+        <Dash>|</Dash>{" "}
         <Margot $active={active === "margot" || active === "both"}>
           Margot
         </Margot>
