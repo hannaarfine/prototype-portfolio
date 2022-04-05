@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: "coffee",
-    images: ["/coffee_table.jpg", "coffee_table3.jpg", "coffee_table2.jpg"],
+    images: ["coffee_table.jpg", "coffee_table3.jpg", "coffee_table2.jpg"],
     title: "Coffee & tea bench",
     materials: "Live edge oak, welded steel legs",
     maker: "margot",
